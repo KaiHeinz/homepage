@@ -13,359 +13,109 @@
       color: #1f2933;
       background: #f7f4ef;
     }
-
-    header, section, footer {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 56px 24px;
-    }
-
-    header {
-      max-width: 1120px;
-      padding-top: 88px;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 6vw, 4.4rem);
-      line-height: 1.05;
-      margin: 0 0 24px;
-      letter-spacing: -0.04em;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin: 0 0 24px;
-    }
-
-    h3 {
-      margin-top: 0;
-    }
-
-    p {
-      font-size: 1.08rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin: 0.45rem 0;
-    }
-
-    .hero-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
-      gap: 48px;
-      align-items: center;
-    }
-
-    .hero-image {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: 28px;
-      box-shadow: 0 18px 48px rgba(0,0,0,0.12);
-    }
-
-    .lead {
-      font-size: 1.35rem;
-      max-width: 720px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 14px 22px;
-      border-radius: 999px;
-      background: #1f3d35;
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .cards {
-      display: grid;
-      gap: 18px;
-    }
-
-    .card {
-      background: white;
-      padding: 26px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    }
-
-    .offer-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      align-items: start;
-    }
-
-    .offer-card {
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-      overflow: hidden;
-    }
-
-    .offer-card summary {
-      list-style: none;
-      cursor: pointer;
-    }
-
-    .offer-card summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .offer-image {
-      display: block;
-      width: 100%;
-      height: 145px;
-      object-fit: cover;
-    }
-
-    .offer-content {
-      padding: 22px 24px 26px;
-      min-height: 190px;
-    }
-
-    .offer-card h3 {
-      font-size: 1.35rem;
-      line-height: 1.2;
-      margin: 0 0 14px;
-    }
-
-    .offer-card p {
-      margin: 0;
-    }
-
-    .offer-teaser {
-      color: #4f5b66;
-    }
-
-    .offer-hint {
-      display: block;
-      margin-top: 20px;
-      font-size: 0.92rem;
-      font-weight: 700;
-      color: #1f3d35;
-    }
-
-    .offer-detail {
-      border-top: 1px solid #e5dfd5;
-      padding: 0 26px 26px;
-    }
-
-    .offer-detail p {
-      margin: 22px 0 16px;
-    }
-
-    .offer-detail strong {
-      display: block;
-      margin-top: 18px;
-    }
-
-    .muted {
-      color: #65717d;
-    }
-
-    footer {
-      font-size: 0.95rem;
-      color: #65717d;
-    }
-
+    header, section, footer { max-width: 920px; margin: 0 auto; padding: 56px 24px; }
+    header { max-width: 1120px; padding-top: 88px; }
+    h1 { font-size: clamp(2.2rem, 6vw, 4.4rem); line-height: 1.05; margin: 0 0 24px; letter-spacing: -0.04em; }
+    h2 { font-size: 2rem; margin: 0 0 24px; }
+    h3 { margin-top: 0; }
+    p { font-size: 1.08rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.45rem 0; }
+    .hero-layout { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr); gap: 48px; align-items: center; }
+    .hero-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; box-shadow: 0 18px 48px rgba(0,0,0,0.12); }
+    .lead { font-size: 1.35rem; max-width: 720px; }
+    .button { display: inline-block; margin-top: 24px; padding: 14px 22px; border-radius: 999px; background: #1f3d35; color: white; text-decoration: none; font-weight: 700; }
+    .cards { display: grid; gap: 18px; }
+    .card { background: white; padding: 26px; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    .offer-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: start; }
+    .offer-card { background: white; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); overflow: hidden; }
+    .offer-card summary { list-style: none; cursor: pointer; }
+    .offer-card summary::-webkit-details-marker { display: none; }
+    .offer-image { display: block; width: 100%; height: 145px; object-fit: cover; }
+    .offer-content { padding: 22px 24px 26px; min-height: 190px; }
+    .offer-card h3 { font-size: 1.35rem; line-height: 1.2; margin: 0 0 14px; }
+    .offer-card p { margin: 0; }
+    .offer-teaser { color: #4f5b66; }
+    .offer-hint { display: block; margin-top: 20px; font-size: 0.92rem; font-weight: 700; color: #1f3d35; }
+    .offer-detail { border-top: 1px solid #e5dfd5; padding: 0 26px 26px; }
+    .offer-detail p { margin: 22px 0 16px; }
+    .offer-detail strong { display: block; margin-top: 18px; }
+    .audience-intro { max-width: 760px; margin-bottom: 24px; }
+    .audience-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .audience-card h3 { font-size: 1.18rem; line-height: 1.25; margin-bottom: 10px; }
+    .audience-card p { margin: 0; color: #4f5b66; }
+    .muted { color: #65717d; }
+    footer { font-size: 0.95rem; color: #65717d; }
     @media (max-width: 900px) {
-      .hero-layout {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-
-      .hero-image {
-        aspect-ratio: 16 / 10;
-      }
+      .hero-layout { grid-template-columns: 1fr; gap: 32px; }
+      .hero-image { aspect-ratio: 16 / 10; }
     }
-
     @media (max-width: 820px) {
-      .offer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .offer-content {
-        min-height: auto;
-      }
+      .offer-grid, .audience-grid { grid-template-columns: 1fr; }
+      .offer-content { min-height: auto; }
     }
   </style>
 </head>
-
 <body>
-
 <header>
   <div class="hero-layout">
     <div>
       <p class="muted">Kai Heinz · Bornholm · IT, digitalisering og teknisk overblik</p>
       <h1>Digital ro og overblik for små virksomheder</h1>
-      <p class="lead">
-        Jeg hjælper små virksomheder med at få styr på IT, arbejdsgange, AI og automatisering —
-        praktisk, forståeligt og uden teknisk bullshit.
-      </p>
+      <p class="lead">Jeg hjælper små virksomheder med at få styr på IT, arbejdsgange, AI og automatisering — praktisk, forståeligt og uden teknisk bullshit.</p>
       <a class="button" href="mailto:kontakt-kai@posteo.dk">Skriv til mig</a>
     </div>
-
-    <img
-      class="hero-image"
-      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
-      alt="Laptop på et skrivebord med kaffe og notesbog"
-    >
+    <img class="hero-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Laptop på et skrivebord med kaffe og notesbog">
   </div>
 </header>
-
 <section>
   <h2>Kender I det?</h2>
   <div class="cards">
-    <div class="card">
-      <p>
-        Opgaver, beskeder og aftaler ligger spredt i mails, Excel-ark, noter og hoveder.
-        Det virker måske — men det koster tid, energi og overblik.
-      </p>
-    </div>
-    <div class="card">
-      <p>
-        I ved godt, at digitalisering og AI kan hjælpe. Men hvad giver faktisk mening
-        for jeres virksomhed — og hvad er bare støj?
-      </p>
-    </div>
+    <div class="card"><p>Opgaver, beskeder og aftaler ligger spredt i mails, Excel-ark, noter og hoveder. Det virker måske — men det koster tid, energi og overblik.</p></div>
+    <div class="card"><p>I ved godt, at digitalisering og AI kan hjælpe. Men hvad giver faktisk mening for jeres virksomhed — og hvad er bare støj?</p></div>
   </div>
 </section>
-
 <section>
   <h2>Det kan jeg hjælpe med</h2>
-
   <div class="offer-grid">
     <details class="offer-card">
       <summary>
-        <img
-          class="offer-image"
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
-          alt="Workshop med post-its og planlægning"
-        >
-        <div class="offer-content">
-          <h3>Digitaliseringscheck</h3>
-          <p class="offer-teaser">
-            En praktisk gennemgang af jeres arbejdsgange, systemer og flaskehalse.
-          </p>
-          <span class="offer-hint">Læs mere</span>
-        </div>
+        <img class="offer-image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Workshop med post-its og planlægning">
+        <div class="offer-content"><h3>Digitaliseringscheck</h3><p class="offer-teaser">En praktisk gennemgang af jeres arbejdsgange, systemer og flaskehalse.</p><span class="offer-hint">Læs mere</span></div>
       </summary>
-      <div class="offer-detail">
-        <p>
-          Vi kigger sammen på, hvordan opgaver, informationer og beslutninger bevæger sig gennem jeres virksomhed:
-          fra den første henvendelse til tilbud, planlægning, udførelse, fakturering og opfølgning.
-        </p>
-        <p>
-          Målet er ikke at digitalisere for digitaliseringens skyld. Målet er at finde de steder,
-          hvor små forbedringer kan give mere ro, bedre overblik og færre manuelle gentagelser.
-        </p>
-        <strong>Eksempler:</strong>
-        <ul>
-          <li>Hvor mister I overblik over kundehenvendelser, opgaver eller aftaler?</li>
-          <li>Hvor bliver information skrevet flere gange i forskellige systemer?</li>
-          <li>Hvor bruger I Excel, mails eller papir, fordi der ikke findes en bedre struktur?</li>
-          <li>Hvor kunne AI, automatisering eller et simpelt digitalt værktøj spare tid?</li>
-        </ul>
-      </div>
+      <div class="offer-detail"><p>Vi kigger sammen på, hvordan opgaver, informationer og beslutninger bevæger sig gennem jeres virksomhed: fra den første henvendelse til tilbud, planlægning, udførelse, fakturering og opfølgning.</p><p>Målet er ikke at digitalisere for digitaliseringens skyld. Målet er at finde de steder, hvor små forbedringer kan give mere ro, bedre overblik og færre manuelle gentagelser.</p><strong>Eksempler:</strong><ul><li>Hvor mister I overblik over kundehenvendelser, opgaver eller aftaler?</li><li>Hvor bliver information skrevet flere gange i forskellige systemer?</li><li>Hvor bruger I Excel, mails eller papir, fordi der ikke findes en bedre struktur?</li><li>Hvor kunne AI, automatisering eller et simpelt digitalt værktøj spare tid?</li></ul></div>
     </details>
-
     <details class="offer-card">
       <summary>
-        <img
-          class="offer-image"
-          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=900&q=80"
-          alt="Person arbejder ved en laptop"
-        >
-        <div class="offer-content">
-          <h3>Små automatiseringer og digitale værktøjer</h3>
-          <p class="offer-teaser">
-            Små konkrete løsninger, der fjerner gentagelser og giver bedre overblik.
-          </p>
-          <span class="offer-hint">Læs mere</span>
-        </div>
+        <img class="offer-image" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=900&q=80" alt="Person arbejder ved en laptop">
+        <div class="offer-content"><h3>Små automatiseringer og digitale værktøjer</h3><p class="offer-teaser">Små konkrete løsninger, der fjerner gentagelser og giver bedre overblik.</p><span class="offer-hint">Læs mere</span></div>
       </summary>
-      <div class="offer-detail">
-        <p>
-          Jeg hjælper med automatisering af gentagne opgaver, bedre struktur i eksisterende data,
-          simple interne værktøjer og praktisk brug af AI i jeres arbejdsgange.
-        </p>
-        <p>
-          Fokus er på løsninger, der er enkle nok til at blive brugt — og nyttige nok til faktisk at gøre en forskel.
-        </p>
-        <strong>Eksempler:</strong>
-        <ul>
-          <li>En formular, der samler kundehenvendelser på en struktureret måde</li>
-          <li>En simpel oversigt over opgaver, kunder, tilbud eller leverancer</li>
-          <li>Automatisering af manuelle kopieringer mellem mails, regneark og andre værktøjer</li>
-          <li>AI-hjælp til tekst, opsummering, oversættelse eller kundekommunikation</li>
-        </ul>
-      </div>
+      <div class="offer-detail"><p>Jeg hjælper med automatisering af gentagne opgaver, bedre struktur i eksisterende data, simple interne værktøjer og praktisk brug af AI i jeres arbejdsgange.</p><p>Fokus er på løsninger, der er enkle nok til at blive brugt — og nyttige nok til faktisk at gøre en forskel.</p><strong>Eksempler:</strong><ul><li>En formular, der samler kundehenvendelser på en struktureret måde</li><li>En simpel oversigt over opgaver, kunder, tilbud eller leverancer</li><li>Automatisering af manuelle kopieringer mellem mails, regneark og andre værktøjer</li><li>AI-hjælp til tekst, opsummering, oversættelse eller kundekommunikation</li></ul></div>
     </details>
-
     <details class="offer-card">
       <summary>
-        <img
-          class="offer-image"
-          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80"
-          alt="Mennesker taler sammen ved et bord"
-        >
-        <div class="offer-content">
-          <h3>Teknisk sparring</h3>
-          <p class="offer-teaser">
-            Retning og overblik, når idéer, leverandører eller IT-projekter bliver uklare.
-          </p>
-          <span class="offer-hint">Læs mere</span>
-        </div>
+        <img class="offer-image" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Mennesker taler sammen ved et bord">
+        <div class="offer-content"><h3>Teknisk sparring</h3><p class="offer-teaser">Retning og overblik, når idéer, leverandører eller IT-projekter bliver uklare.</p><span class="offer-hint">Læs mere</span></div>
       </summary>
-      <div class="offer-detail">
-        <p>
-          Har I et IT-projekt, en leverandør, en idé eller en digital udfordring, men mangler teknisk overblik?
-          Jeg hjælper med at skabe retning, stille de rigtige spørgsmål og oversætte mellem forretning og teknik.
-        </p>
-        <p>
-          Det kan være svært at vurdere, om en løsning er god, dyr, for kompleks eller bare dårligt forklaret.
-          Her kan jeg hjælpe som en neutral teknisk sparringspartner.
-        </p>
-        <strong>Eksempler:</strong>
-        <ul>
-          <li>I skal vælge et nyt system, men er usikre på mulighederne</li>
-          <li>I har fået et tilbud fra en IT-leverandør og vil gerne forstå konsekvenserne</li>
-          <li>I har en idé til en app, platform eller digital løsning, men ved ikke, hvor I skal starte</li>
-          <li>I vil gerne bruge AI eller automatisering, men vil undgå hype og fejlinvesteringer</li>
-        </ul>
-      </div>
+      <div class="offer-detail"><p>Har I et IT-projekt, en leverandør, en idé eller en digital udfordring, men mangler teknisk overblik? Jeg hjælper med at skabe retning, stille de rigtige spørgsmål og oversætte mellem forretning og teknik.</p><p>Det kan være svært at vurdere, om en løsning er god, dyr, for kompleks eller bare dårligt forklaret. Her kan jeg hjælpe som en neutral teknisk sparringspartner.</p><strong>Eksempler:</strong><ul><li>I skal vælge et nyt system, men er usikre på mulighederne</li><li>I har fået et tilbud fra en IT-leverandør og vil gerne forstå konsekvenserne</li><li>I har en idé til en app, platform eller digital løsning, men ved ikke, hvor I skal starte</li><li>I vil gerne bruge AI eller automatisering, men vil undgå hype og fejlinvesteringer</li></ul></div>
     </details>
   </div>
 </section>
-
 <section>
   <h2>For hvem?</h2>
-  <p>
-    For små og mellemstore virksomheder, håndværkere, lokale producenter,
-    servicevirksomheder og andre, der gerne vil arbejde smartere uden at bygge en stor IT-afdeling.
-  </p>
+  <p class="audience-intro">For virksomheder, hvor hverdagen allerede er fuld af kunder, opgaver og beslutninger — men hvor IT, systemer og data ikke altid følger lige så roligt med.</p>
+  <div class="audience-grid">
+    <div class="card audience-card"><h3>Håndværkere og servicevirksomheder</h3><p>Når aftaler, billeder, tilbud, materialer og opfølgning ligger spredt på telefoner, i mails og i hoveder.</p></div>
+    <div class="card audience-card"><h3>Lokale producenter og små butikker</h3><p>Når salg, lager, kundehenvendelser og praktisk planlægning vokser ud af de simple løsninger, der engang var nok.</p></div>
+    <div class="card audience-card"><h3>Turisme, oplevelser og foreninger</h3><p>Når sæson, bookinger, kommunikation og mange små opgaver kræver bedre overblik uden at gøre tingene tunge.</p></div>
+    <div class="card audience-card"><h3>Virksomheder med en digital idé</h3><p>Når I overvejer AI, automatisering, en ny platform eller et nyt system — men gerne vil starte klogt og konkret.</p></div>
+  </div>
 </section>
-
 <section>
   <h2>Første skridt</h2>
-  <p>
-    Vi tager en kort samtale om jeres situation. Hvis jeg kan hjælpe, finder vi en enkel
-    og realistisk næste handling.
-  </p>
+  <p>Vi tager en kort samtale om jeres situation. Hvis jeg kan hjælpe, finder vi en enkel og realistisk næste handling.</p>
   <a class="button" href="mailto:kontakt-kai@posteo.dk">Kontakt mig</a>
 </section>
-
-<footer>
-  <p>© Kai Heinz · Bornholm</p>
-</footer>
-
+<footer><p>© Kai Heinz · Bornholm</p></footer>
 </body>
 </html>
