@@ -48,11 +48,21 @@
     .portrait { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 16px; }
     .about-copy p { margin: 0 0 1rem; }
     .about-copy p:last-child { margin-bottom: 0; }
+    .cta-card { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr); gap: 28px; align-items: center; background: #1f3d35; color: white; padding: 34px; border-radius: 24px; box-shadow: 0 18px 48px rgba(0,0,0,0.14); }
+    .cta-card h2 { margin-bottom: 18px; color: white; }
+    .cta-card p { margin: 0 0 1rem; color: #f7f4ef; }
+    .cta-button { background: #f7f4ef; color: #1f3d35; }
+    .cta-note { margin-top: 14px; font-size: 0.95rem; color: rgba(255,255,255,0.78); }
+    .cta-side { background: rgba(255,255,255,0.1); padding: 24px; border-radius: 18px; }
+    .cta-side h3 { font-size: 1.15rem; margin-bottom: 12px; color: white; }
+    .cta-list { list-style: none; padding: 0; margin: 0; }
+    .cta-list li { margin: 0.65rem 0; color: #f7f4ef; }
     .muted { color: #65717d; }
     footer { font-size: 0.95rem; color: #65717d; }
     @media (max-width: 900px) {
       .hero-layout { grid-template-columns: 1fr; gap: 32px; }
       .hero-image { aspect-ratio: 16 / 10; }
+      .cta-card { grid-template-columns: 1fr; }
     }
     @media (max-width: 820px) {
       .offer-grid, .audience-grid, .about-card { grid-template-columns: 1fr; }
@@ -129,9 +139,24 @@
   </div>
 </section>
 <section>
-  <h2>Første skridt</h2>
-  <p>Vi tager en kort samtale om jeres situation. Hvis jeg kan hjælpe, finder vi en enkel og realistisk næste handling.</p>
-  <a class="button" href="mailto:kontakt-kai@posteo.dk">Kontakt mig</a>
+  <div class="cta-card">
+    <div>
+      <h2>Første skridt</h2>
+      <p>Har I en arbejdsgang, et system eller en digital idé, der driller? Send mig en kort besked. Du behøver ikke have en færdig plan — bare en fornemmelse af, hvad der tager for meget tid, skaber forvirring eller burde kunne gøres smartere.</p>
+      <p>Så tager vi en uformel samtale og finder ud af, om jeg kan hjælpe jer videre.</p>
+      <a class="button cta-button" href="mailto:kontakt-kai@posteo.dk?subject=Kort%20samtale%20om%20digitalisering">Skriv til mig om jeres udfordring</a>
+      <p class="cta-note">Ingen salgstale. Ingen binding. Bare en konkret snak om jeres situation.</p>
+    </div>
+    <div class="cta-side">
+      <h3>Det kan være nok at skrive:</h3>
+      <ul class="cta-list">
+        <li>“Vi mister overblikket over opgaver.”</li>
+        <li>“Vi bruger for meget tid på manuelt arbejde.”</li>
+        <li>“Vi overvejer AI, men ved ikke hvor vi skal starte.”</li>
+        <li>“Vi har fået et IT-tilbud, men forstår ikke helt konsekvensen.”</li>
+      </ul>
+    </div>
+  </div>
 </section>
 <footer><p>© Kai Heinz · Bornholm</p></footer>
 </body>
