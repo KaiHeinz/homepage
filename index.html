@@ -27,6 +27,14 @@
     .button { display: inline-block; margin-top: 24px; padding: 14px 22px; border-radius: 999px; background: #1f3d35; color: white; text-decoration: none; font-weight: 700; }
     .cards { display: grid; gap: 18px; }
     .card { background: white; padding: 26px; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    .pain-layout { display: grid; grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr); gap: 22px; align-items: start; }
+    .pain-intro { background: #1f3d35; color: white; padding: 28px; border-radius: 22px; box-shadow: 0 14px 38px rgba(0,0,0,0.12); }
+    .pain-intro h2 { color: white; margin-bottom: 16px; }
+    .pain-intro p { margin: 0; color: #f7f4ef; }
+    .pain-grid { display: grid; gap: 14px; }
+    .pain-card { background: white; padding: 22px; border-radius: 18px; border-left: 5px solid #1f3d35; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+    .pain-card h3 { font-size: 1.15rem; line-height: 1.25; margin-bottom: 8px; }
+    .pain-card p { margin: 0; color: #4f5b66; }
     .offer-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: start; }
     .offer-card { background: white; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); overflow: hidden; }
     .offer-card summary { list-style: none; cursor: pointer; }
@@ -60,9 +68,8 @@
     .muted { color: #65717d; }
     footer { font-size: 0.95rem; color: #65717d; }
     @media (max-width: 900px) {
-      .hero-layout { grid-template-columns: 1fr; gap: 32px; }
+      .hero-layout, .pain-layout, .cta-card { grid-template-columns: 1fr; gap: 32px; }
       .hero-image { aspect-ratio: 16 / 10; }
-      .cta-card { grid-template-columns: 1fr; }
     }
     @media (max-width: 820px) {
       .offer-grid, .audience-grid, .about-card { grid-template-columns: 1fr; }
@@ -84,10 +91,16 @@
   </div>
 </header>
 <section>
-  <h2>Kender I det?</h2>
-  <div class="cards">
-    <div class="card"><p>Opgaver, beskeder og aftaler ligger spredt i mails, Excel-ark, noter og hoveder. Det virker måske — men det koster tid, energi og overblik.</p></div>
-    <div class="card"><p>I ved godt, at digitalisering og AI kan hjælpe. Men hvad giver faktisk mening for jeres virksomhed — og hvad er bare støj?</p></div>
+  <div class="pain-layout">
+    <div class="pain-intro">
+      <h2>Kender I det?</h2>
+      <p>Det starter sjældent som et stort IT-problem. Det er bare hverdagen, der langsomt bliver mere besværlig end den behøver at være.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card"><h3>Overblikket bor i hoveder</h3><p>Aftaler, opgaver og kundehenvendelser ligger i mails, beskeder, Excel-ark og mundtlige aftaler.</p></div>
+      <div class="pain-card"><h3>Det samme bliver skrevet flere gange</h3><p>Information flyttes manuelt fra sted til sted, og små gentagelser stjæler tid hver uge.</p></div>
+      <div class="pain-card"><h3>I ved, at noget kan gøres smartere</h3><p>Men mellem nye systemer, AI, automatisering og gode råd er det uklart, hvor det giver mening at starte.</p></div>
+    </div>
   </div>
 </section>
 <section>
